@@ -11,13 +11,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-   
-    @IBOutlet weak var mainLabel: UILabel!
-    @IBAction func didbuttonClick(_ sender: Any) {
-        mainLabel.text="Hi! Leeo"
-        print("Hello world")
+        
+        
     }
     
+    @IBOutlet weak var text: UILabel!
+    
+    @IBAction func button(_ sender: Any) {
+        print ("Hello world")
+        text.text = "Hi Ju0"
+        text.font = .systemFont(ofSize: 17)
+        text.textColor = .blue
+    }
 }
 

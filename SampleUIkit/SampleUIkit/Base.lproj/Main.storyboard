@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7Z-PW-j7g">
-                                <rect key="frame" x="153" y="78" width="86" height="21"/>
+                                <rect key="frame" x="153" y="59" width="123" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -29,18 +29,24 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <action selector="didbuttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ttv-FU-CRU"/>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2L-TM-tVs"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="MSK-ai-flm" appends="YES" id="PEL-95-tlR"/>
+                            <outletCollection property="gestureRecognizers" destination="MSK-ai-flm" appends="YES" id="yDV-vu-9Xy"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="MainLabel" destination="a7Z-PW-j7g" id="5sO-Ra-Rjw"/>
+                        <outlet property="text" destination="a7Z-PW-j7g" id="GPL-fJ-duL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="MSK-ai-flm"/>
             </objects>
             <point key="canvasLocation" x="-25" y="4"/>
         </scene>
