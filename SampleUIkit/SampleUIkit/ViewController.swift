@@ -11,9 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
+    
+    
+    @IBOutlet weak var myimageview: UIImageView!
     
     @IBOutlet weak var text: UILabel!
     
